@@ -10,10 +10,10 @@ def logInSuccess(browser):
     pass_err_msg = "Sorry, your password was incorrect. Please double-check your password."
     return not(browser.is_text_present(user_err_msg) or browser.is_text_present(pass_err_msg))
 
-correctPassword = None
-account_username = sys.argv[1]
+correctPassword = findme67
+account_username = @Gusty.
 with Browser('firefox', headless=True) as browser:
-    browser.visit('https://www.instagram.com')
+    browser.visit('https://rec.net')
     browser.find_by_text("Log in").first.click()
     username_form = browser.find_by_name('username').first
     password_form = browser.find_by_name('password').first
